@@ -10,7 +10,8 @@ class VeterinarioController extends Controller{
 
     public function index() {
         $dados = Veterinario::all();
-        return view('veterinarios.index', compact(['dados']));
+        $especialidades = Especialidade::all();
+        return view('veterinarios.index', compact(['dados', 'especialidades']));
     }
 
     public function create() {

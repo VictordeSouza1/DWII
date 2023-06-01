@@ -10,14 +10,16 @@ class Datatable extends Component {
     public $crud;
     public $header;
     public $data;
+    public $especialidades;
     public $hide;
 
-    public function __construct($title, $crud, $header, $data, $hide) {
+    public function __construct($title, $crud, $header, $data, $especialidades, $hide) {
 
         $this->title = $title;   
         $this->crud = $crud;
         $this->header = $header;
         $this->data = $data;
+        $this->especialidades = $especialidades;
         $this->hide = $hide;
     }
 
